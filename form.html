@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="bg.css">
+  <title>Codle Login Form</title>
+  <script>
+
+  </script>
+
+
+</head>
+<body>
+    <section>
+        <div class="form-box">
+            <div class="form-value">
+                <form action="">
+      
+                    
+                    <h2>Codle Login Form</h2>
+                   
+                    <div class="inputbox">
+                       
+                        <input type="text" id="username" placeholder="Username" required>
+                        <label for="">Username:</label>
+                    </div>
+                    <div class="inputbox">
+                        
+                        <input type="password" id="password" placeholder="Password" required>
+                        <label for="">Password:</label>
+                    </div>
+                    <input type="submit" value="Login">
+
+                   
+                   
+                    <script>
+                        document.getElementById("loginForm").addEventListener("submit", function(event) {
+                          event.preventDefault();
+                    
+                          var username = document.getElementById("username").value;
+                          var password = document.getElementById("password").value;
+                    
+                          // Check username and password
+                          if (username === "user1" && password === "password1") {
+                            window.location.href = "wordle.html";
+                          } else {
+                            alert("Invalid username or password.");
+                          }
+                        });
+                      </script>
+                    
+                </form>
+            </div>
+        </div>
+    </section>
+   
+</body>
+</html>
